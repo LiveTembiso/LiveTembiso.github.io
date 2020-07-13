@@ -1,0 +1,183 @@
+
+
+/*----------------------- General styles -----------------*/
+html, body, .container-fluid {margin:0;padding:0;height:100%; }
+
+body{overflow-x: hidden;
+	position: relative;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+/*--------------------- Sidebar--------------------------*/
+.profile{
+	padding-bottom: 6px;
+	margin-top: 27px;
+}
+
+#menu-toggle{
+	z-index: 1000;
+	position:fixed;
+	margin-top: 0.5em;
+	margin-left: 0.85em;
+	background-color: transparent;
+}
+
+#navLinks a{
+	color: white;
+	display: block;
+}
+
+.active, #navLinks a:hover{
+	color: #28B1E1!important;
+	text-decoration: underline;
+	text-decoration-color: #28B1E1;
+	-webkit-text-decoration-color:#28B1E1;
+}
+
+#navLinks a:hover{
+	color: white!important;
+}
+
+#name-link{
+	font-size: 30px;
+	color: white;
+	font-style: sans-serif;
+	text-decoration: none;
+}
+
+#wrapper {
+  padding-left: 0;
+  width: 100%;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+
+}
+#wrapper.toggled {
+  padding-left: 250px;
+}
+#sidebar-id {
+  z-index: 900;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  padding-top: 1em;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #000;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.sidebar{
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 250px;
+	margin:0;
+	padding: 0;
+	color: white;
+	overflow-x: hidden;
+	
+}
+
+#wrapper.toggled #sidebar-id {
+  width: 250px;
+}
+
+#page-content-id{
+	width: 100%;
+	padding-left: 15px;
+}
+
+#wrapper.toggled #page-content-id{
+	position: absolute;
+	margin-right: -250px;
+}
+
+/*--------------------------- Social Media Icons --------------*/
+
+.social-icon{
+	padding: 20px;
+	height: 50px;
+}
+
+
+/*----------------------------- Home --------------------------*/
+#home-image{
+	width: 100%;
+    float: left;
+    position: relative;
+    opacity: 1;
+    height: 100vh;
+    display: block;
+    z-index: 1;
+
+}
+
+.home{
+	background-image: url("../img/homeimage.png");
+	background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.home-title{
+
+	color:white;
+	padding-top: 20%;
+	text-shadow: 2px 2px 8px black;
+	/*padding-left: 0.2em;*/
+}
+
+/*---------------------------- About ------------------------*/
+.about{
+	
+}
+
+#about-id{
+	background-color: red;
+	overflow: hidden;
+	padding-top: 0.5vh;
+}
+
+/*---------------------------- Projects -------------------- */
+
+.project-padding{
+	padding: 0.5em;
+}
+
+
+/*---------------------------- Small devices ----------------*/
+@media(max-width:768px) {
+  #wrapper{
+    padding-left: 250px;
+  }
+  #wrapper.toggled {
+    padding-left: 0px;
+  }
+  #sidebar-id {
+    width: 250px;
+  }
+
+  #wrapper.toggled #sidebar-id{
+    width: 0;
+  }
+
+  #page-content-id{
+  	padding-left: 15px;
+  	margin-right: 0;
+  	position: relative;
+  }
+
+  #wrapper.toggled  #page-content-id{
+    position: relative;
+    margin-right: 0;
+  }
+}
