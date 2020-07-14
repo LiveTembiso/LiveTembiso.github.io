@@ -17,13 +17,14 @@ body{overflow-x: hidden;
 #menu-toggle{
 	z-index: 1000;
 	position:fixed;
+  border-color: rgb(0,0,0)!important;
 	margin-top: 0.5em;
 	margin-left: 0.85em;
 	background-color: transparent;
 }
 
 #navLinks a{
-	color: white;
+	color: black;
 	display: block;
 }
 
@@ -35,12 +36,12 @@ body{overflow-x: hidden;
 }
 
 #navLinks a:hover{
-	color: white!important;
+	color: black!important;
 }
 
 #name-link{
 	font-size: 30px;
-	color: white;
+  color: black;
 	font-style: sans-serif;
 	text-decoration: none;
 }
@@ -66,11 +67,12 @@ body{overflow-x: hidden;
   padding-top: 1em;
   margin-left: -250px;
   overflow-y: auto;
-  background: #000;
+  background: white;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+  color: black;
 }
 
 .sidebar{
