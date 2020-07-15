@@ -1,25 +1,86 @@
 
+/* ------------------------- Fonts -----------------------------*/
+.serif {
+  font-family: "Times New Roman", Times, serif;
+}
 
-/*----------------------- General styles -----------------*/
+.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.monospace {
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.gravity-light{
+  font-family: gravity-light;
+}
+
+.gravity-bold{
+  font-family: gravity-bold;
+}
+
+@font-face{
+  font-family: gravity-light;
+  src: url(../fonts/gravity/Gravity-Light.otf);
+}
+
+@font-face{
+  font-family:gravity-bold;
+  src: url(../fonts/gravity/Gravity-Bold.otf);
+}
+
+.heading{
+  font-family: gravity-bold;
+  font-size: 2em;
+  text-decoration: underline;
+  text-decoration-color: #28B1E1;
+  -webkit-text-decoration-color:#28B1E1;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.socials-heading{
+  font-family: gravity-bold;
+  font-size: 1.4em;
+  text-decoration: underline;
+  text-decoration-color: #28B1E1;
+  -webkit-text-decoration-color:#28B1E1;
+  padding-bottom: 0.7em;
+  padding-top: 0.5em;
+
+}
+
+.sub-heading{
+  font-family: gravity-bold;
+
+}
+
+p{
+  font-family: gravity-light;
+}
+
+/*----------------------- General styles -----------------------*/
+
 html, body, .container-fluid {margin:0;padding:0;height:100%; }
 
 body{overflow-x: hidden;
 	position: relative;
-	font-family: "Lucida Console", Monaco, monospace;
 }
 
-/*--------------------- Sidebar--------------------------*/
+/*--------------------------- Sidebar --------------------------*/
+
 .profile{
 	padding-bottom: 6px;
-	margin-top: 27px;
+	
 }
 
 #menu-toggle{
 	z-index: 1000;
 	position:fixed;
   border-color: rgb(0,0,0)!important;
-	margin-top: 0.5em;
-	margin-left: 0.85em;
+	margin-top: 0.7em;
+	margin-left: 0.7em;
 	background-color: transparent;
 }
 
@@ -84,7 +145,7 @@ body{overflow-x: hidden;
 	padding: 0;
 	color: white;
 	overflow-x: hidden;
-	
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
 #wrapper.toggled #sidebar-id {
@@ -94,6 +155,7 @@ body{overflow-x: hidden;
 #page-content-id{
 	width: 100%;
 	padding-left: 15px;
+  padding-right: 15px;
 }
 
 #wrapper.toggled #page-content-id{
@@ -101,44 +163,59 @@ body{overflow-x: hidden;
 	margin-right: -250px;
 }
 
-/*--------------------------- Social Media Icons --------------*/
+/*--------------------------- Social Media Icons ------------------*/
 
 .social-icon{
-	padding: 20px;
+  z-index: 901
+	width: 50px;
 	height: 50px;
+  position: sticky;
 }
 
+/*---------------------------------- Home --------------------------*/
 
-/*----------------------------- Home --------------------------*/
 #home-image{
 	width: 100%;
-    float: left;
-    position: relative;
-    opacity: 1;
-    height: 100vh;
-    display: block;
-    z-index: 1;
+  float: left;
+  position: relative;
+  opacity: 1;
+  height: 100vh;
+  display: block;
+  z-index: 1;
 
 }
 
 .home{
 	background-image: url("../img/homeimage.png");
 	background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-size: cover;
+  position: relative;
 }
 
+#my-title{
+  font-family: gravity-bold;
+  font-size: 3em;
+  text-decoration: underline;
+  text-decoration-color: #28B1E1;
+  -webkit-text-decoration-color:#28B1E1;
+}
 
+#title-brief{
+  font-family: gravity-light;
+  width: 800px;
+  font-size: 15px!important;
+}
 
 .home-title{
-
 	color:white;
 	padding-top: 20%;
-	text-shadow: 2px 2px 8px black;
-	/*padding-left: 0.2em;*/
+	text-shadow: 2px 2px 18px black;
+  font-size: 30px;
+	padding-left: 1em;
 }
 
-/*---------------------------- About ------------------------*/
+/*-------------------------------- About ---------------------------*/
+
 .about{
 	
 }
@@ -149,14 +226,37 @@ body{overflow-x: hidden;
 	padding-top: 0.5vh;
 }
 
-/*---------------------------- Projects -------------------- */
+/*------------------------------- Projects ------------------------ */
 
 .project-padding{
 	padding: 0.5em;
 }
 
+/*------------------------------- Contact -------------------------*/
+.contact{
+  background-color: grey;
+}
+.contact-wrapper{
+  border-top-style: solid;
+  border-top-color: black;
+  border-top-width: thick;
 
-/*---------------------------- Small devices ----------------*/
+  background-color: grey;
+}
+
+.social-media-icons{
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-spacing{
+  padding-top: 1em; 
+  padding-bottom: 1em;
+}
+
+/*----------------------------- Small devices ----------------------*/
+
 @media(max-width:768px) {
   #wrapper{
     padding-left: 250px;

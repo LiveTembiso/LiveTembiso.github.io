@@ -15,9 +15,6 @@
     <title>Live Tembiso</title>
   </head>
   <body data-spy="scroll" data-target="#navLinks" data-offset="30">
-  	<button href="#menu-toggle" class="border border-light rounded" id="menu-toggle"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list-nested" fill="black" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z"/>
-</svg></button>
 		 <div id="wrapper" class="toggled">
 
 		    <!-- Sidebar -->
@@ -40,20 +37,22 @@
 		        <div class="row">
 		          <div class="col-lg-12">
 		          	<!-- Home !-->
+		          	<button href="#menu-toggle" class="border border-light rounded" id="menu-toggle"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list-nested" fill="black" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z"/>
+</svg></button>
 		          	<div id="home-image"  class=" home container-fluid ">
-		            	
 						<div class="home-title center">
 							<h1 id="my-title">Hi, I am Live...</h1>
-							<p>Brief and everything nice</p>
+							<p id="title-brief">I love playing basketball, tinkering with my Raspberry Pi, working on software projects that I am passionate about(recently I have been working on a platform that will help homeless people improve their situations) and I have gained interest in Philosophy.</p>
 						</div>
 					</div>
 		            
 		            <!-- About !-->
 		            <div id="about-id" class="container">
-		            	<p>About me</p>
+		            	<div class="heading">About me</div>
 		            	<div class="row">
 		            		<div class="col">      
-				            	<br>
+				            	
 				            	<p>Some stuff here, stuff stuff stuff stuff</p>
 				            	<br>
 				            	<p>More stuff goes here, more stuff more stuff more stuff more stuff</p>
@@ -76,7 +75,7 @@
 		            <hr>
 		            <!-- Projects !-->
 		            <div id="projects-id" class="container">
-		            	<p>Projects</p>
+		            	<div class="heading" >Projects</div>
 		            	<div class="row">
 		            		<div class="col-lg project-padding">
 			            		<div class="card" >
@@ -135,14 +134,14 @@
 			            	</div>
 		            		
 		            	</div>
-		            	<h4>Some text</h4>
 		            </div>
 		            <hr>
 
 		            <!-- Articles !-->
 
 		            <div id="articles-id" class="articles container">
-		            	Read
+		            	<div class="heading">Read</div>
+		            	
 		            	<div class="row">
 		            		<div class="col-lg">
 		            			<div>
@@ -178,52 +177,39 @@
 		            		</div>
 		            	</div>
 		            </div>
-		            <hr>
+		            
 
 		            <!-- Contact !-->
-		            <div id="contact-id" class="container contact">
-		            	Let's keep in touch
-		            	<div class="row">
-		            		<div class="col-lg">
-		            			<form class="needs-validation" novalidate>
-		            				<div class="form-group">
-		            					<label for="contactName" class="col-sm-2 col-form-label">Name</label>
-		            					<input type="text" class="form-control" id="contactName">
-		            					<div class="valid-feedback">
-		            						Looks good
-		            					</div>
-		            					<div class="invalid-feedback">
-		            						Please enter your name
-		            					</div>
-		            				</div>
+		            <div class="contact-wrapper">
+			            <div id="contact-id" class="container contact gravity-light">
+			            	 <div class="heading">Let's keep in touch</div>
 
-		            				<div class="form-group">
-		            					<label for="contactEmail" class="col-sm-2 col-form-label">Name</label>
-		            					<input type="text" class="form-control" id="contactEmail">
-		            					<div class="valid-feedback">
-		            						Looks good
-		            					</div>
-		            					<div class="invalid-feedback">
-		            						Please enter your email address
-		            					</div>
-		            				</div>
+			            	<div class="contact-spacing">
+			            		<img class="social-icon" src="img/social-media-icons/phone.png"> 073 769 9121
+			            	</div>
 
-		            				<div class="form-group">
-		            					<label for="contactMessage" class="col-sm-2 col-form-label">Name</label>
-		            					<textarea class="form-control" id="contactMessage" rows="3"></textarea>
-		            					<div class="valid-feedback">
-		            						Looks good
-		            					</div>
-		            					<div class="invalid-feedback">
-		            						Please enter your message
-		            					</div>
-		            				</div>
+			            	<div class="contact-spacing">
+			            		<img class="social-icon" src="img/social-media-icons/email.png"> livetembiso0@gmail.com 
+			            	</div>
 
-		            				<button class="btn btn-primary" type="submit">Submit form</button>
-		            			</form>
-		            		</div>
-		            	</div>
-		            </div>
+			            	<div class="contact-spacing">
+			            		<img class="social-icon" src="img/social-media-icons/location.png"> Cape Town, South Africa
+			            	</div>
+
+			            	
+
+			            	<div class="social-media-icons">
+			            		<div class="socials-heading">
+			            			Socials
+			            		</div>
+			            		<div>
+				    				<a class="social-icon" href="https://github.com/LiveTembiso"><img class="social-icon" src="img/social-media-icons/github.png"></a>
+				    				<a class="social-icon" href="https://www.instagram.com/live.tembiso"><img class="social-icon" src="img/social-media-icons/instagram.png"></a>
+				    				<a class="social-icon" href="https://www.linkedin.com/in/live-tembiso-920405126"><img class="social-icon" src="img/social-media-icons/linkedin.png"></a>
+			    				</div>
+		    				</div>
+			            </div>
+		        	</div>
 
 		          </div>
 		        </div>
