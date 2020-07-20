@@ -30,6 +30,11 @@
   src: url(../fonts/gravity/Gravity-Bold.otf);
 }
 
+@font-face{
+  font-family:gravity-regular;
+  src: url(../fonts/gravity/Gravity-Regular.otf);
+}
+
 .heading{
   font-family: gravity-bold;
   font-size: 2em;
@@ -166,10 +171,9 @@ body{overflow-x: hidden;
 /*--------------------------- Social Media Icons ------------------*/
 
 .social-icon{
-  z-index: 901
-	width: 50px;
-	height: 50px;
-  position: sticky;
+	width: 40px;
+	height: 40px;
+  margin-left: 0.4em;
 }
 
 /*---------------------------------- Home --------------------------*/
@@ -182,7 +186,6 @@ body{overflow-x: hidden;
   height: 100vh;
   display: block;
   z-index: 1;
-
 }
 
 .home{
@@ -195,23 +198,35 @@ body{overflow-x: hidden;
 #my-title{
   font-family: gravity-bold;
   font-size: 3em;
+  opacity: 1!important;
+  text-align: center;
   text-decoration: underline;
   text-decoration-color: #28B1E1;
   -webkit-text-decoration-color:#28B1E1;
 }
 
 #title-brief{
-  font-family: gravity-light;
-  width: 800px;
+  font-family: gravity-regular;
+  text-align: center;
+  text-shadow: 1px 1px 4px black!important;
   font-size: 15px!important;
 }
 
 .home-title{
 	color:white;
 	padding-top: 20%;
-	text-shadow: 2px 2px 18px black;
+	text-shadow: 3px 3px 18px black;
   font-size: 30px;
 	padding-left: 1em;
+}
+
+.language-icon{
+  width: 50px;
+  height: 50px;
+}
+
+.language-wrapper{
+  text-align: center;
 }
 
 /*-------------------------------- About ---------------------------*/
@@ -221,18 +236,17 @@ body{overflow-x: hidden;
 }
 
 #about-id{
-	background-color: red;
 	overflow: hidden;
 	padding-top: 0.5vh;
 }
 
-/*------------------------------- Projects ------------------------ */
+/*-------------------------------- Projects ------------------------ */
 
 .project-padding{
 	padding: 0.5em;
 }
 
-/*------------------------------- Contact -------------------------*/
+/*-------------------------------- Contact -------------------------*/
 .contact{
   background-color: grey;
 }
@@ -240,19 +254,21 @@ body{overflow-x: hidden;
   border-top-style: solid;
   border-top-color: black;
   border-top-width: thick;
-
   background-color: grey;
-}
-
-.social-media-icons{
-  text-align: center;
-  margin-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 2em;
 }
 
 .contact-spacing{
   padding-top: 1em; 
   padding-bottom: 1em;
+}
+/*--------------------------------- Footer --------------------------*/
+
+.footer{
+  text-align: center;
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*----------------------------- Small devices ----------------------*/
