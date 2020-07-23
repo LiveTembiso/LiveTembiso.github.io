@@ -76,8 +76,9 @@ body{overflow-x: hidden;
 /*--------------------------- Sidebar --------------------------*/
 
 .profile{
-	padding-bottom: 6px;
-	
+	padding-bottom: 5px;
+	height: 30%;
+  width: 100%;
 }
 
 #menu-toggle{
