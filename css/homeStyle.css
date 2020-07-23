@@ -77,7 +77,7 @@ body{overflow-x: hidden;
 
 .profile{
 	padding-bottom: 5px;
-	height: 30%;
+	
   width: 100%;
 }
 
@@ -131,7 +131,7 @@ body{overflow-x: hidden;
   left: 250px;
   width: 0;
   height: 100%;
-  padding-top: 1em;
+  padding-top: 0.7em;
   margin-left: -250px;
   overflow-y: auto;
   background: white;
@@ -149,6 +149,7 @@ body{overflow-x: hidden;
 	width: 250px;
 	margin:0;
 	padding: 0;
+  padding-left: 15px;
 	color: white;
 	overflow-x: hidden;
   font-family: "Lucida Console", Monaco, monospace;
@@ -189,6 +190,43 @@ body{overflow-x: hidden;
   z-index: 1;
 }
 
+.cv-anchor{
+  background-color: transparent;
+  font-family: gravity-light;
+  font-size: 16.5px;
+  color: white;
+  border-radius: 4px;
+}
+
+div.cv-button-wrapper a{
+  text-decoration: none;
+}
+
+div.cv-button-wrapper a:hover .cv-button{
+  text-decoration: none;
+  font-family: gravity-regular;
+  color: black;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: black;
+  background-color: rgba(255,255,255,0.4);
+}
+
+.cv-button{
+  text-align: center;
+  background-color: transparent;
+  padding-bottom: 2.5px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.cv-button-wrapper{
+  padding-top: 0.7em;
+}
+
 .home{
 	background-image: url("../img/homeimage.png");
 	background-repeat: no-repeat;
@@ -215,7 +253,7 @@ body{overflow-x: hidden;
 
 .home-title{
 	color:white;
-	padding-top: 20%;
+	padding-top: 15%;
 	text-shadow: 3px 3px 18px black;
   font-size: 30px;
 	padding-left: 1em;
