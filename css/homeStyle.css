@@ -228,7 +228,7 @@ div.cv-button-wrapper a:hover .cv-button{
 }
 
 .home{
-	background-image: url("../img/homeimage.png");
+	background-image: url("../img/background-tint.jpg");
 	background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -271,18 +271,35 @@ div.cv-button-wrapper a:hover .cv-button{
 /*-------------------------------- About ---------------------------*/
 
 .about{
-	
+	padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 #about-id{
 	overflow: hidden;
-	padding-top: 0.5vh;
+  text-align: center;
+	
+}
+
+.about-button{
+  margin-top: 15px;
 }
 
 /*-------------------------------- Projects ------------------------ */
 
 .project-padding{
 	padding: 0.5em;
+}
+
+#projects-id{
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+/*----------------------------------Read----------------------------*/
+.read{
+  text-align: center;
+  padding-bottom: 70px;
 }
 
 /*-------------------------------- Contact -------------------------*/
