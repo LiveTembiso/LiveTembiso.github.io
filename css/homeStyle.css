@@ -43,6 +43,7 @@
   -webkit-text-decoration-color:#28B1E1;
   padding-bottom: 1em;
   padding-top: 1em;
+  text-align: center;
 }
 
 .socials-heading{
@@ -77,6 +78,7 @@ body{overflow-x: hidden;
 
 .profile{
 	padding-bottom: 5px;
+
 	
   width: 100%;
 }
@@ -298,8 +300,12 @@ div.cv-button-wrapper a:hover .cv-button{
 
 /*----------------------------------Read----------------------------*/
 .read{
-  text-align: center;
+  justify-content: center;
   padding-bottom: 70px;
+}
+
+.blogs{
+  
 }
 
 /*-------------------------------- Contact -------------------------*/
@@ -330,6 +336,10 @@ div.cv-button-wrapper a:hover .cv-button{
 /*----------------------------- Small devices ----------------------*/
 
 @media(max-width:768px) {
+  #my-title{
+    font-size: 2em;
+  }
+
   #wrapper{
     padding-left: 250px;
   }
