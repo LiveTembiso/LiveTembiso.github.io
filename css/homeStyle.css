@@ -239,7 +239,6 @@ div.cv-button-wrapper a:hover .cv-button{
 #my-title{
   font-family: gravity-bold;
   font-size: 3em;
-  opacity: 1!important;
   text-align: center;
   text-decoration: underline;
   text-decoration-color: #28B1E1;
@@ -337,7 +336,7 @@ div.cv-button-wrapper a:hover .cv-button{
 
 @media(max-width:768px) {
   #my-title{
-    font-size: 2em;
+    font-size: 1em;
   }
 
   #wrapper{
