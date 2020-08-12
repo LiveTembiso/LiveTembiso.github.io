@@ -1,7 +1,6 @@
 
 html{
   scroll-behavior: smooth;
-  transition-duration: 5000ms;
 }
 
 /* ------------------------- Fonts -----------------------------*/
@@ -342,7 +341,7 @@ div.cv-button-wrapper a:hover .cv-button{
 
 @media(max-width:768px) {
   #my-title{
-    margin-top: 1.5em;
+    margin-top: 0.3em;
     font-size: 1.5em;
   }
 
@@ -353,7 +352,7 @@ div.cv-button-wrapper a:hover .cv-button{
     padding-left: 0px;
   }
   #sidebar-id {
-    width: 250px;
+    width: 100%;
   }
 
   #wrapper.toggled #sidebar-id{
