@@ -48,21 +48,12 @@ html{
   padding-bottom: 1em;
   padding-top: 1em;
   text-align: center;
-}
-
-.socials-heading{
-  font-family: gravity-bold;
-  font-size: 1.4em;
-  text-decoration: underline;
-  text-decoration-color: #28B1E1;
-  -webkit-text-decoration-color:#28B1E1;
-  padding-bottom: 0.7em;
-  padding-top: 0.5em;
-
+  overflow: visible!important;
 }
 
 .sub-heading{
   font-family: gravity-bold;
+  overflow: hidden!important;
 
 }
 
@@ -72,7 +63,13 @@ p{
 
 /*----------------------- General styles -----------------------*/
 
-html, body, .container-fluid {margin:0;padding:0;height:100%; }
+html, body {margin:0;
+  padding:0;
+  height:100%; 
+  overflow: hidden!important;
+}
+
+.container-fluid{margin:0;padding:0;}
 
 body{overflow-x: hidden;
 	position: relative;
@@ -337,12 +334,24 @@ div.cv-button-wrapper a:hover .cv-button{
   padding-bottom: 20px;
 }
 
+.copyright{
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  color: white;
+}
+
 /*----------------------------- Small devices ----------------------*/
 
 @media(max-width:768px) {
   #my-title{
     margin-top: 0.3em;
     font-size: 1.5em;
+  }
+
+  .copyright{
+    text-align: center;
   }
 
   #wrapper{
@@ -352,7 +361,7 @@ div.cv-button-wrapper a:hover .cv-button{
     padding-left: 0px;
   }
   #sidebar-id {
-    width: 100%;
+    width: 250px;
   }
 
   #wrapper.toggled #sidebar-id{
