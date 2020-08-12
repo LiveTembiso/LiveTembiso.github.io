@@ -48,13 +48,12 @@ html{
   padding-bottom: 1em;
   padding-top: 1em;
   text-align: center;
-  overflow: visible!important;
+
 }
 
 .sub-heading{
   font-family: gravity-bold;
-  overflow: hidden!important;
-
+  
 }
 
 p{
@@ -66,7 +65,6 @@ p{
 html, body {margin:0;
   padding:0;
   height:100%; 
-  overflow: hidden!important;
 }
 
 .container-fluid{margin:0;padding:0;}
