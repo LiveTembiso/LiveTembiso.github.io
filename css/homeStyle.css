@@ -77,14 +77,14 @@ body{overflow-x: hidden;
 
 .profile{
 	padding-bottom: 5px;
-  
+
 	
   width: 100%;
 }
 
 #menu-toggle{
 	z-index: 1000;
-	position:fixed;
+	position:fixed!important;
   border-color: rgb(0,0,0)!important;
 	margin-top: 0.7em;
 	margin-left: 0.7em;
@@ -128,7 +128,7 @@ body{overflow-x: hidden;
 }
 #sidebar-id {
   z-index: 900;
-  position: fixed;
+  position: fixed!important;
   left: 250px;
   width: 0;
   height: 100%;
