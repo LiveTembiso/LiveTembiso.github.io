@@ -283,6 +283,16 @@ div.cv-button-wrapper a:hover .cv-button{
   margin-top: 15px;
 }
 
+/*---------------------------------Skills----------------------------*/
+.sub-heading{
+  font-family: gravity-regular;
+}
+
+.skills-list{
+  font-size: medium;
+  font-family: gravity-light;
+}
+
 /*-------------------------------- Projects ------------------------ */
 
 .project-padding{
@@ -301,8 +311,8 @@ div.cv-button-wrapper a:hover .cv-button{
   text-align: center;
 }
 
-.blogs{
-  text-align: left!important;
+.brief{
+  text-align: center;
 }
 
 /*-------------------------------- Contact -------------------------*/
