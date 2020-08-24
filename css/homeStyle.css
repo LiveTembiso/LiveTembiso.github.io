@@ -335,7 +335,7 @@ div.cv-button-wrapper a:hover .cv-button{
 
 .footer{
   text-align: center;
-  background-color: black;
+  background-image: linear-gradient(black 0.1%,#28B1E1);
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -348,7 +348,7 @@ div.cv-button-wrapper a:hover .cv-button{
   color: white;
 }
 
-/*----------------------------- All devices ----------------------*/
+/*----------------------------- Bigger devices ----------------------*/
 @media(min-width:769px){
   #wrapper{
     padding-left: 250px;
