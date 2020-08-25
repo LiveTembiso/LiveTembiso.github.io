@@ -335,7 +335,7 @@ div.cv-button-wrapper a:hover .cv-button{
 
 .footer{
   text-align: center;
-  background-image: linear-gradient(black 0.1%,#28B1E1);
+  background-color: black;
   padding-top: 20px;
   padding-bottom: 20px;
 }
