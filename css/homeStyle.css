@@ -266,6 +266,13 @@ div.cv-button-wrapper a:hover .cv-button{
   text-align: center;
 }
 
+.tech-badge{
+  border-style: solid;
+  border-width: 2px;
+  border-color: green;
+  border-radius: 45%;
+}
+
 /*-------------------------------- About ---------------------------*/
 
 .about{
