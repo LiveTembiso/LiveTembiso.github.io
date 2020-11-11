@@ -42,9 +42,7 @@ html{
 .heading{
   font-family: gravity-bold;
   font-size: 2em;
-  text-decoration: underline;
-  text-decoration-color: #28B1E1;
-  -webkit-text-decoration-color:#28B1E1;
+  
   padding-bottom: 1em;
   padding-top: 1em;
   text-align: center;
